@@ -1,0 +1,8 @@
+{
+  "name": "Petro Pincode Finder",
+  "short_name": "Petro",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#108082",
+  "background_color": "#ffffff"
+}

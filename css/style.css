@@ -1,0 +1,837 @@
+/* =====================================
+   GLOBAL RESET
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5fbfb;
+    line-height: 1.5;
+}
+
+a{
+  color: #fff;
+}
+
+/* =====================================
+   PINCODE CARD
+===================================== */
+
+.pincode-card {
+
+    background: #ffffff;
+    padding: 35px 25px;
+    border-radius: 16px;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+
+    max-width: 720px;
+    width: 100%;
+
+    text-align: center;
+
+    border: 1px solid rgba(16, 128, 130, 0.1);
+}
+
+.pincode-title {
+
+    font-size: 28px;
+    font-weight: 700;
+    color: #108082;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+
+/* INPUT */
+
+.pincode-input {
+
+    width: 65%;
+    padding: 14px;
+
+    font-size: 16px;
+
+    border: 2px solid #108082;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.pincode-input:focus {
+
+    border-color: #0b6a6a;
+
+    box-shadow: 0 0 8px rgba(16, 128, 130, 0.3);
+}
+
+
+/* BUTTON */
+
+.search-btn {
+
+    padding: 13px 28px;
+
+    background: linear-gradient(135deg, #108082, #0b6a6a);
+
+    color: #fff;
+
+    border: none;
+
+    border-radius: 8px;
+
+    margin-top: 10px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.search-btn:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 16px rgba(16, 128, 130, 0.4);
+}
+
+
+/* ERROR */
+
+.error {
+
+    color: red;
+
+    font-size: 14px;
+
+    margin-top: 15px;
+}
+
+
+/* SALES INFO */
+
+.sales-info {
+
+    margin-top: 20px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    color: #108082;
+
+    background: #e9f7f7;
+
+    padding: 15px;
+
+    border-radius: 10px;
+}
+
+
+/* TABLE */
+
+#dataTable {
+
+    width: 100%;
+
+    margin-top: 20px;
+
+    border-collapse: collapse;
+}
+
+#dataTable th {
+
+    background: #108082;
+
+    color: #fff;
+
+    padding: 12px;
+
+    font-size: 15px;
+}
+
+#dataTable td {
+
+    padding: 12px;
+
+    border-bottom: 1px solid #ddd;
+
+    font-size: 14px;
+}
+
+#dataTable tr:hover {
+
+    background: #f2f2f2;
+}
+
+  
+.navbar-brand img {
+
+    height: 52px;
+}
+
+#whatsapp-icon {
+
+    margin-left: 15px;
+}
+ /* ========================= */
+/* SIMPLE EXACT TOP BAR */
+/* ========================= */
+
+.top-bar {
+
+    background: #1f7f7f;
+    color: #ffffff;
+
+    padding: 6px 0;
+
+    font-size: 13px;
+
+}
+
+/* Remove spacing */
+
+.top-bar ul {
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+
+}
+
+/* Left contact */
+
+.top-contact li {
+
+    margin-right: 18px;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.top-contact i {
+
+    margin-right: 6px;
+
+    font-size: 13px;
+
+}
+
+/* Center map */
+
+.map-link {
+
+    font-weight: 500;
+
+}
+
+.map-link i {
+
+    margin-right: 6px;
+
+}
+
+/* Right social */
+
+.top-social {
+
+    justify-content: flex-end;
+
+}
+
+.top-social li {
+
+    margin-left: 12px;
+
+}
+
+.top-social a {
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+
+}
+
+.top-social a:hover {
+
+    color: #ffd700;
+
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .top-bar {
+
+        text-align: center;
+
+    }
+
+    .top-contact {
+
+        justify-content: center;
+        margin-bottom: 5px;
+
+    }
+
+    .top-social {
+
+        justify-content: center;
+
+    }
+
+}
+/* =====================================
+   FOOTER
+===================================== */
+
+.footer {
+
+    background: #0b6a6a;
+
+    color: #ffffff;
+
+    padding-top: 40px;
+}
+
+.footer-logo {
+
+    width: 120px;
+}
+
+.social-link-foot {
+
+    list-style: none;
+}
+
+.social-link-foot li {
+
+    margin-bottom: 14px;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+.social-link-foot a {
+
+    color: #ffffff;
+
+    text-decoration: none;
+}
+
+.social-link-foot a:hover {
+
+    color: #ffd700;
+}
+
+.highlight {
+
+    font-weight: bold;
+
+    color: #ffd700;
+}
+
+.footer-heading {
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    margin-bottom: 18px;
+}
+
+.footer-social {
+
+    list-style: none;
+}
+
+.footer-social li {
+
+    display: inline-block;
+
+    margin: 6px;
+}
+
+.footer-social li a {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: inline-flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #108082;
+
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    font-size: 18px;
+
+    transition: 0.3s;
+}
+
+.footer-social li a:hover {
+
+    background: #ffd700;
+
+    color: #000;
+
+    transform: translateY(-3px);
+}
+
+.copyright {
+
+    /* margin-top: 25px; */
+
+    /* padding: 12px 0; */
+
+    background: #084c4c;
+
+    color: #ffffff;
+
+    /* font-size: 14px; */
+}
+
+
+/* =====================================
+   RESPONSIVE BREAKPOINTS
+===================================== */
+
+/* Tablet */
+
+@media (max-width: 992px) {
+
+    .contact-details ul {
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .navbar-brand img {
+
+        height: 50px;
+    }
+
+    .pincode-input {
+
+        width: 90%;
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .pincode-card {
+
+        padding: 25px 15px;
+    }
+
+    .pincode-title {
+
+        font-size: 22px;
+    }
+
+    .subtitle {
+
+        font-size: 14px;
+    }
+
+    .pincode-input {
+
+        width: 100%;
+    }
+
+    .search-btn {
+
+        width: 100%;
+    }
+
+    .footer {
+
+        text-align: center;
+    }
+
+}
+
+
+/* Small Mobile */
+
+@media (max-width: 480px) {
+
+    .pincode-title {
+
+        font-size: 20px;
+    }
+
+    .navbar-brand img {
+
+        height: 45px;
+    }
+
+    .footer-logo {
+
+        width: 100px;
+    }
+
+}
+
+.cop{ 
+  margin-bottom: 0px !important;
+}
+/* ===============================
+   DEVELOPER CREDIT
+=============================== */
+
+.developer-credit {
+
+    display: inline-block;
+
+    margin-left: 8px;
+
+    font-size: 14px;
+
+    color: #ffd700;
+
+    font-weight: 500;
+}
+
+.developer-credit strong {
+
+    color: #ffffff;
+
+    font-weight: 700;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .developer-credit {
+
+        display: block;
+
+        margin-top: 6px;
+
+        font-size: 13px;
+    }
+
+}
+
+
+/* ===== Professional Inactive Alert Bar ===== */
+
+.inactive-alert-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 51px;
+
+    background: linear-gradient(
+        90deg,
+        #0f2027,
+        #203a43,
+        #2c5364
+    );
+
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 28px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    border-bottom: 2px solid #ff4d4f;
+
+    overflow: hidden;
+}
+
+/* Left Label */
+
+.alert-label {
+    background: rgba(255, 77, 79, 0.15);
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    border-right: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Pulse Dot */
+
+.pulse-dot {
+    width: 10px;
+    height: 10px;
+    background: #ff4d4f;
+    border-radius: 50%;
+    margin-right: 10px;
+
+    animation: pulse 1.4s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.5);
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Scroll Area */
+
+.alert-content {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.alert-scroll {
+    white-space: nowrap;
+    display: inline-block;
+    padding-left: 100%;
+
+    animation: scrollAlert 22s linear infinite;
+}
+
+/* Animation */
+
+@keyframes scrollAlert {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+.renewal-alert {
+
+    font-size: 13px;
+
+    background: #fff3cd;
+
+    color: #856404;
+
+    padding: 4px 10px;
+
+    border-radius: 6px;
+
+    margin-left: 10px;
+
+    font-weight: 600;
+
+}
+
+/* Full Screen Overlay */
+
+.renewal-modal {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.6);
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 99999;
+
+}
+
+/* Popup Box */
+
+.renewal-box {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    width: 350px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+
+}
+
+.renewal-box h2 {
+
+    color: red;
+
+}
+
+.renewal-box input {
+
+    width: 100%;
+
+    padding: 10px;
+
+    margin-top: 15px;
+
+    border-radius: 6px;
+
+    border: 1px solid #ccc;
+
+}
+
+.renewal-box button {
+
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding: 10px;
+
+    background: #108082;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+}
+
+#errorMsg {
+
+    color: red;
+
+    margin-top: 10px;
+
+}
+ 
+
+.renewal-box{
+    width:420px;
+    background:#fff;
+    border-radius:20px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 20px 60px rgba(0,0,0,.25);
+    animation:popup .35s ease;
+}
+
+@keyframes popup{
+    from{
+        transform:translateY(20px) scale(.95);
+        opacity:0;
+    }
+    to{
+        transform:translateY(0) scale(1);
+        opacity:1;
+    }
+}
+
+.renewal-icon{
+    font-size:55px;
+    color:#ff9800;
+    margin-bottom:15px;
+}
+
+.renewal-title{
+    font-size:34px;
+    font-weight:700;
+    color:#e53935;
+    margin-bottom:10px;
+}
+
+.renewal-text{
+    color:#555;
+    line-height:1.6;
+    margin-bottom:20px;
+}
+
+.renewal-input{
+    width:100%;
+    height:55px;
+    border:1px solid #ddd;
+    border-radius:12px;
+    padding:0 15px;
+    font-size:16px;
+    outline:none;
+}
+
+.renewal-input:focus{
+    border-color:#108082;
+    box-shadow:0 0 0 4px rgba(16,128,130,.15);
+}
+
+.renewal-btn{
+    width:100%;
+    height:55px;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(
+        135deg,
+        #108082,
+        #0d6f71
+    );
+    color:#fff;
+    font-size:18px;
+    font-weight:600;
+    margin-top:15px;
+    cursor:pointer;
+}
+
+.renewal-btn:hover{
+    transform:translateY(-2px);
+}

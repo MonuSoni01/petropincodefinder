@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Favicon Icon -->
+
+    <link rel="icon" href="./images/logo.webp" />
+    <link rel="manifest" href="manifest.json">
+
+    <title>Petro Pincode Finder</title>
+    <meta name="description"
+        content="Visit Petro Industech’s About Us page to see why dealers and customers buy from us. We deliver quality bathroom accessories and racks in bulk." />
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font CSS & CDN -->
+    <link href="css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <!-- Own  CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+
+                <!-- Left -->
+                <div class="col-lg-4 col-md-6 col-12 left-contact">
+                    <ul class="top-contact">
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+918000007336">+91-8000007336</a>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:contact@petroindustech.com">
+                                contact@petroindustech.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Center -->
+                <div class="col-lg-4 col-md-12 text-center map-link">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <a href="https://g.co/kgs/FCqNarH" target="_blank">
+                        Find Us On Map
+                    </a>
+                </div>
+
+                <!-- Right -->
+                <div class="col-lg-4 col-md-6 text-end social-area">
+                    <ul class="top-social">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light top-nav">
+        <div class="container" style="max-width: 1280px">
+            <div class="navbar-brand d-flex align-items-center">
+
+                <a href="#">pop
+                    <img src="images/logo.webp" alt="logo" class="img-fluid">
+                </a>
+
+                <a target="_blank" href="tel:+91-8000007336" class="d-md-none d-block">
+
+                    <img src="images/calling_icon.png" width="45px" id="whatsapp-icon">
+
+                </a>
+
+            </div> 
+        </div>
+    </nav>
+
+
+    <div class="inactive-alert-bar">
+
+        <div class="alert-label">
+            <span class="pulse-dot"></span>
+            Inactive Distributor Alert
+        </div>
+
+        <div class="alert-content">
+            <div class="alert-scroll" id="inactiveScroll">
+                Loading inactive distributors...
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Breadcrumbs Section -->
+    <div class="full-title">
+        <div class="container">
+            <h1 class="mt-5 mb-5">Petro Pincode Finder</h1>
+            <div class="breadcrumb-main">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="https://www.petroindustech.com" style="color: #108082;">Home</a>
+                    </li>
+                    <li class="breadcrumb-item active fw-bold">Petro Pincode Finder</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center align-items-center mb-5">
+                <div class="pincode-card mt-5">
+                    <h1 class="pincode-title">
+                        📍 Smart Pincode Finder
+                    </h1>
+
+                    <p class="subtitle">
+                        Find your nearest Petro distributor instantly using your pincode.
+                    </p>
+
+                    <!-- Input -->
+                    <input type="text" id="pincode" class="pincode-input mb-3" maxlength="6" autocomplete="off"
+                        placeholder="Enter 6-digit Pincode" oninput="this.value = this.value.replace(/[^0-9]/g,'')">
+
+                    <!-- Button -->
+                    <button class="search-btn" onclick="getDetails()">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Search
+                    </button>
+
+                    <!-- Loader -->
+                    <div id="loader" style="display:none;">
+                        <div class="spinner-border text-info mt-3"></div>
+                    </div>
+
+                    <!-- Message -->
+                    <p id="msg" class="error mt-3"></p>
+
+                    <!-- Distributor Result -->
+                    <div id="salesPerson" class="sales-info"></div>
+
+                    <!-- Table -->
+                    <table id="dataTable" style="display:none;">
+
+                        <thead>
+                            <tr>
+                                <th>Block</th>
+                                <th>District</th>
+                                <th>State</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="tableBody"></tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--FOOTER SECTION-->
+    <!-- ================= FOOTER START ================= -->
+
+    <footer class="footer mt-5">
+
+        <div class="container bottom_border mt-3">
+
+            <div class="row">
+
+                <!-- LEFT SIDE -->
+                <div class="col-md-6 col-sm-6">
+
+                    <div class="d-flex justify-content-center align-items-center">
+
+                        <img src="images/petro-circle-logo.webp" alt="Petro Logo" class="footer-logo img-fluid">
+
+                    </div>
+
+                    <ul class="mt-3 social-link-foot">
+
+                        <li>
+                            <i class="fa-solid fa-briefcase"></i>
+
+                            <span class="highlight">
+                                Corporate Office:-
+                            </span>
+
+                            <br>
+
+                            <b>Petro Industech Private Limited</b>
+
+                            <br>
+
+                            A-47B, Naresh Park Extension,
+                            Nangloi, New Delhi - 110041
+
+                        </li>
+
+                        <li>
+
+                            <a href="https://g.co/kgs/KhszSVx">
+
+                                <i class="fa-solid fa-location-dot"></i>
+
+                                <span class="highlight">
+                                    Manufacturing (Unit - I):-
+                                </span>
+
+                                A-48D, Naresh Park Extension,
+                                Nangloi, New Delhi - 110041
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="https://g.co/kgs/Vv9FQjM">
+
+                                <i class="fa-solid fa-location-dot"></i>
+
+                                <span class="highlight">
+                                    Manufacturing (Unit - II):-
+                                </span>
+
+                                Plot No. 812/F-45, RIICO Industrial Area,
+                                BHIWADI, Rajasthan - 301019
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- RIGHT SIDE -->
+                <div class="col-md-6 col-sm-6">
+
+                    <div class="news-box">
+
+                        <h5 class="footer-heading">
+                            Connect With Social Media
+                        </h5>
+
+                        <ul class="footer-social">
+
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/www.petroindustries.in/">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a target="_blank" href="https://www.instagram.com/petroindustries/">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a target="_blank" href="https://x.com/Petroindustech">
+                                    <i class="fab fa-x-twitter"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a target="_blank" href="https://www.youtube.com/@petroindustechpvtltd">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a target="_blank" href="https://in.pinterest.com/petroindustech/">
+                                    <i class="fab fa-pinterest"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a target="_blank" href="https://wa.me/918000007336">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </li>
+
+                            <br>
+
+
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- COPYRIGHT -->
+
+        <div class="container ">
+
+            <p class="cop copyright text-center">
+
+                Copyright Petro Industech Pvt Ltd © 2026.
+                All Rights Reserved
+
+              
+            </p>
+
+        </div>
+
+    </footer>
+
+    
+
+    <!-- ================= FOOTER END ================= -->
+    <!-- FAQ JS -->
+
+
+    
+    <!-- Pincode logic is loaded once from js/script.js -->
+
+    <!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- jQuery plugins -->
+<script src="js/jquery.appear.js"></script>
+
+<!-- Complete Petro Finder Script -->
+<script src="js/script.js"></script>
+
+<script>
+    if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+            .register("service-worker.js")
+            .then(function () {
+                console.log("✅ Service Worker Registered Successfully");
+            })
+            .catch(function (error) {
+                console.log("❌ Service Worker Failed:", error);
+            });
+    }
+</script>
+
+</body>
+</html> 
