@@ -40,7 +40,21 @@
     "Hardware": "YES",
     "SS": "NO",
     "LastBillingDate": "28-05-2026"
-  }, 
+  },
+  {
+    "Distributor": "SHRI SHYAM TRADING",
+    "City": "Asansol",
+    "State": "West Bengal",
+    "Area": "Asansol, Durgapur, Bardhaman, Bankura, Purulia",
+    "SalesPerson": "Ankit Kalra",
+    "salesContact": "9218082883",
+    "contact": "9832155584",
+    "status": "Proposed",
+    "BathAccessories": "NO",
+    "Hardware": "YES",
+    "SS": "NO",
+    "LastBillingDate": "04-07-2026"
+  },
   {
     "Distributor": "Nayak Enterises",
     "City": "Jeypore",
@@ -48,7 +62,7 @@
     "Area": "Nabarangpur, Koraput, Malkangiri, Kalahandi, Rayagada",
     "SalesPerson": "Ankit Kalra",
     "salesContact": "9218082883",
-    "contact": "9040332232",
+    "contact": "9832155584",
     "status": "Proposed",
     "BathAccessories": "YES",
     "Hardware": "YES",
@@ -82,5 +96,61 @@
     "Hardware": "YES",
     "SS": "NO",
     "LastBillingDate": "14-07-2026"
+  },
+  {
+    "Distributor": "Kampur Tiles and Sanitation",
+    "City": "Kampur",
+    "State": "Assam",
+    "Area": "Kampur, Nagaon, Tezpur, Golaghat, Jorhat, Hojai",
+    "SalesPerson": "Rup Ranjan",
+    "salesContact": "",
+    "contact": "8638144848",
+    "status": "Proposed",
+    "BathAccessories": "",
+    "Hardware": "",
+    "SS": "",
+    "LastBillingDate": ""
+  },
+  {
+    "Distributor": "Vinisha Hardware",
+    "City": "Morigaon",
+    "State": "Assam",
+    "Area": "Sivasagar, Dibrugarh, Lakhimpur",
+    "SalesPerson": "Rup Ranjan",
+    "salesContact": "",
+    "contact": "7002599366",
+    "status": "Proposed",
+    "BathAccessories": "",
+    "Hardware": "",
+    "SS": "",
+    "LastBillingDate": ""
+  },
+  {
+    "Distributor": "Krishnau Supply",
+    "City": "Guwahati",
+    "State": "Assam",
+    "Area": "Kamrup, Darrang, Kokrajhar, Dhubri",
+    "SalesPerson": "Rup Ranjan",
+    "salesContact": "",
+    "contact": "9085298876",
+    "status": "Proposed",
+    "BathAccessories": "",
+    "Hardware": "",
+    "SS": "",
+    "LastBillingDate": ""
+  },
+  {
+    "Distributor": "Khurana Brothers",
+    "City": "Sri Ganganagar",
+    "State": "Rajasthan",
+    "Area": "Sri Ganganagar",
+    "SalesPerson": "Vivek Srivastava",
+    "salesContact": "",
+    "contact": "7732953915",
+    "status": "Proposed",
+    "BathAccessories": "",
+    "Hardware": "",
+    "SS": "",
+    "LastBillingDate": ""
   }
 ]

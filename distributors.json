@@ -91,7 +91,7 @@
     "SalesPerson": "Ankit Kalra",
     "salesContact": "9218082883",
     "contact": "9785001100",
-    "status": "Active",
+    "status": "Inactive",
     "BathAccessories": "YES",
     "Hardware": "YES",
     "SS": "YES",
@@ -119,10 +119,23 @@
     "SalesPerson": "Amit",
     "salesContact": "7669036568",
     "contact": "9166266930",
-    "status": "Active",
+    "status": "Inactive",
     "BathAccessories": "YES",
     "Hardware": "YES",
     "SS": "NO",
     "LastBillingDate": "25-03-2026"
-  }
+  },
+  {
+  "Distributor": "Shree Ram Trading",
+  "City": "Haridwar",
+  "State": "Uttarakhand",
+  "Area": "Rishikesh, Dehradun, Haridwar, Roorkee",
+  "SalesPerson": "Vivek Srivastava",
+  "contact": "9917180700",
+  "status": "Active",
+  "BathAccessories": "YES",
+  "Hardware": "YES",
+  "SS": "NO",
+  "LastBillingDate": "20-06-2026"
+}
 ]
