@@ -1,0 +1,33 @@
+PETRO FINDER - SALES ROUTE IMAGE UPDATE GUIDE
+=============================================
+
+1) Put the employee route screenshot/image inside:
+   images/routes/
+
+2) Recommended file naming:
+   prince-gupta-nov-2026.png
+   rup-ranjan-nov-2026.png
+   ankit-kumar-nov-2026.png
+
+3) Open:
+   js/routes.js
+
+4) Find the employee inside routeData and update:
+   month: "November 2026"
+   image: "images/routes/prince-gupta-nov-2026.png"
+
+5) To add a new employee, copy one object in routeData:
+   {
+       id: "employee-name",
+       name: "Employee Name",
+       month: "November 2026",
+       image: "images/routes/employee-name-nov-2026.png"
+   }
+
+6) Save and deploy/push the updated website.
+
+Current included route images:
+- Prince Gupta - October 2026
+- Rup Ranjan - October 2026
+
+Ankit Kumar and Amit Soni are already added as filters; their cards will show "Image Pending" until an image path is added.

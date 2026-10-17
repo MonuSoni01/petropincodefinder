@@ -1,0 +1,94 @@
+/* PROFESSIONAL CARD DESIGN */
+.pincode-card {
+    background: linear-gradient(135deg, #ffffff, #f4fbfb);
+    padding: 35px 25px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(16, 128, 130, 0.15);
+    width: 100%;
+    max-width: 720px;
+    text-align: center;
+    border: 1px solid rgba(16, 128, 130, 0.15);
+    transition: 0.3s ease;
+}
+
+.pincode-card:hover {
+    transform: translateY(-4px);
+}
+/* PROFESSIONAL INPUT */
+.pincode-input {
+    width: 65%;
+    padding: 14px;
+    font-size: 17px;
+    border: 2px solid #108082;
+    border-radius: 8px;
+    outline: none;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.pincode-input:focus {
+    border-color: #0b6a6a;
+    box-shadow: 0 0 8px rgba(16, 128, 130, 0.3);
+}
+/* PROFESSIONAL BUTTON */
+.search-btn {
+    padding: 14px 28px;
+    background: linear-gradient(135deg, #108082, #0b6a6a);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.search-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(16, 128, 130, 0.4);
+}.pincode-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #108082;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* TABLE PROFESSIONAL */
+#dataTable {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#dataTable th {
+    background: linear-gradient(135deg, #108082, #0b6a6a);
+    color: white;
+    font-weight: 600;
+}
+
+#dataTable td {
+    font-size: 15px;
+}
+.sales-info {
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #108082;
+    background: #e9f7f7;
+    padding: 15px;
+    border-radius: 10px;
+}
+.pincode-section {
+    background: linear-gradient(
+        135deg,
+        #f5fbfb,
+        #e0f3f3
+    );
+    padding: 60px 0;
+}
